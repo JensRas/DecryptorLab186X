@@ -23,7 +23,7 @@ import java.util.HashMap;
  * @author Jens Rasmussen : jensr@iastate.edu
  * @author ...
  * @author ...
- * @author ...
+ * @author Alec Elsbernd : elsbeale@iastate.edu
  */
 public class Decryptor {
     public static void main(String[] args) {
@@ -141,9 +141,9 @@ public class Decryptor {
         cypher.put(26, 'z');
 
         StringBuilder solution = new StringBuilder();
-
-        // TODO
-
+        for (int i : toDecrypt)
+            solution.append(cypher.get(i));
+        
         solution.append('!');
         return solution.toString();
     }
