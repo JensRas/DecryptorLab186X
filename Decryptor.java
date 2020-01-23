@@ -58,7 +58,9 @@ public class Decryptor {
      * @param toDecrypt - The array to be decoded.
      */
     public static void convertBinaryArrayToDecimalArray(int[] toDecrypt) {
-        // TODO
+        for (int i = 0; i < toDecrypt.length; i++) {				// Adding blank quotes makes it a string (for parameters)
+        	toDecrypt[i] = Integer.parseInt(toDecrypt[i] + "", 2);  // 2 makes it binary versus 16 would mean hex
+        }															// Need Integer class for the parseInt method in it
     }
 
 
@@ -78,9 +80,6 @@ public class Decryptor {
      */
     public static void shiftArrayValues(int[] toDecrypt) {
         // TODO    
-    	int i = toDecrypt.length; 
-    	
-    	for ()
     }
 
 
