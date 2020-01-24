@@ -22,7 +22,7 @@ import java.util.HashMap;
  * Place your @author tags here.
  * @author Jens Rasmussen : jensr@iastate.edu
  * @author ...
- * @author ...
+ * @author Garrett Levenhagen : garrettl@iastate.edu
  * @author Alec Elsbernd : elsbeale@iastate.edu
  */
 public class Decryptor {
@@ -96,6 +96,8 @@ public class Decryptor {
      */
     public static void divideArrayValues(int[] toDecrypt) {
         // TODO
+    	for (int i = 0; i < toDecrypt.length; i++)
+            toDecrypt[i] = toDecrypt[i] / 5;
     }
 
 
