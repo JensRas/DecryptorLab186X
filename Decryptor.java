@@ -21,7 +21,7 @@ import java.util.HashMap;
  *
  * Place your @author tags here.
  * @author Jens Rasmussen : jensr@iastate.edu
- * @author ...
+ * @author Zach Wingert : zwingert@iastate.edu
  * @author Garrett Levenhagen : garrettl@iastate.edu
  * @author Alec Elsbernd : elsbeale@iastate.edu
  */
@@ -79,7 +79,9 @@ public class Decryptor {
      * @param toDecrypt - The array to be decoded.
      */
     public static void shiftArrayValues(int[] toDecrypt) {
-        // TODO    
+            for (int i = 0; i < toDecrypt.length; i++)
+                toDecrypt[i] = i % 3 == 0 ? toDecrypt[i] - 1 :
+                               i % 3 == 1 ? toDecrypt[i] - 2 : toDecrypt[i] - 3;    
     }
 
 
